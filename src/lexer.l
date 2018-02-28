@@ -764,6 +764,8 @@ int display_style = 0;
 ">"               {yylval=mtex2MML_copy_string("&gt;"); return MOL;}
 "\\textless"    |
 "<"               {yylval=mtex2MML_copy_string("&lt;"); return MOL;}
+"≤" {yylval=mtex2MML_copy_string("&#8804;"); return MOL;}
+"≥" {yylval=mtex2MML_copy_string("&#8805;"); return MOL;}
 "\\land"  {yylval=mtex2MML_copy_string("&and;"); return MOL;}
 "\\lor"   {yylval=mtex2MML_copy_string("&or;"); return MOL;}
 "\\surd"  {yylval=mtex2MML_copy_string("&radic;"); return MOL;}
