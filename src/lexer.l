@@ -531,7 +531,8 @@ int display_style = 0;
 "\\bigcap" |
 "\\Intersection"       {yylval=mtex2MML_copy_string("&Intersection;"); return MOB;}
 
-"\\in"           {yylval=mtex2MML_copy_string("&Element;"); return MOL;}
+"\\in"           {yylval=mtex2MML_copy_string("&#x2208;"); return MOL;}
+"\\ni"           {yylval=mtex2MML_copy_string("&#x220b;"); return MOL;}
 
  /* For some reason, Firefox does not put in the right spacing around some of these operators
   * unless we ask for it, explicitly.
@@ -620,7 +621,6 @@ int display_style = 0;
 "\\nsubseteq" |
 "\\nsubseteqq" |
 "\\notin" |
-"\\ni" |
 "\\notni" |
 "\\nmid" |
 "\\nshortmid" |
