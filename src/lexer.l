@@ -231,6 +231,7 @@ int display_style = 0;
 "?"   |
 "#"   |
 "`"   |
+"@"   |
 "*"        {yylval=mtex2MML_copy_string(yytext); return MOL;}
 
 "\\prime"  {yylval=mtex2MML_copy_string("&prime;"); return MOLL;}
